@@ -1,0 +1,24 @@
+'''Create a calculator that can compute the area of the following shapes: Circle and Triangle'''
+
+print ('Calculator is starting!')
+#Input of shape
+option = raw_input('Enter C for cirle or T for Triangle: ')
+#Checking the input if it's circle or triangle
+if option == 'C':
+  radius = float(raw_input('Radius of circle: '))
+  area = 3.14159*(radius**2) #Area of circle formula
+  print(str(area))
+  
+#Input is triangle
+elif option == 'T':
+  base = float(raw_input('Base of triangle: '))
+  height = float(raw_input('Height of triangle: '))
+  area = 0.5*base*height #Area of triangle formula
+  print(str(area))
+  
+#If user did not enter C or T
+else: 
+  print('You just entered an invalid shape')
+
+print('Program exiting...')
+  
